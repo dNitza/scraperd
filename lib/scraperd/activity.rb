@@ -23,8 +23,8 @@ module Scraperd
     end
 
     def watched_at_from_description(description)
-      string_date = description.match(/<p>Watched on (.*)<\/p>/)[1]
-      Time.parse string_date
+      string_date = description.match(/<p>Watched on (.*)<\/p>/)
+      string_date ? (Time.parse string_date[1]) : nil
     end
 
     def title_from_title(title)
