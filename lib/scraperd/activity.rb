@@ -1,6 +1,5 @@
 require "simple-rss"
 require "ostruct"
-require "pry"
 
 module Scraperd
   class Activity < ::OpenStruct

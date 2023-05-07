@@ -1,6 +1,5 @@
 require "simple-rss"
 require "open-uri"
-require "pry"
 
 require "scraperd/activity"
 require "scraperd/error"
